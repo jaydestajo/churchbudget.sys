@@ -1,0 +1,20 @@
+{
+  "functions": {
+    "index.php":            { "runtime": "vercel-php@0.9.0" },
+    "login.php":             { "runtime": "vercel-php@0.9.0" },
+    "logout.php":            { "runtime": "vercel-php@0.9.0" },
+    "dashboard.php":         { "runtime": "vercel-php@0.9.0" },
+    "assets_module/*.php":   { "runtime": "vercel-php@0.9.0" },
+    "denomination/*.php":    { "runtime": "vercel-php@0.9.0" },
+    "expenses/*.php":        { "runtime": "vercel-php@0.9.0" },
+    "income/*.php":          { "runtime": "vercel-php@0.9.0" },
+    "reports/*.php":         { "runtime": "vercel-php@0.9.0" },
+    "settings/*.php":        { "runtime": "vercel-php@0.9.0" }
+  },
+  "routes": [
+    { "src": "/config/(.*)", "status": 404 },
+    { "src": "/includes/(.*)", "status": 404 },
+    { "src": "/sql/(.*)", "status": 404 },
+    { "src": "/tools/(.*)", "status": 404 }
+  ]
+}
